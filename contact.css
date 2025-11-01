@@ -1,0 +1,188 @@
+/* ===== IMPORT FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  background-color: #fdf6fa;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+head, header {
+  background: linear-gradient(135deg, #ff66b2, #ff99cc);
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.logo {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffe6f2;
+}
+
+/* ===== PAGE TITLE ===== */
+h2, h3 {
+  text-align: center;
+  margin-top: 40px;
+  color: #ff4da6;
+  font-family: 'Playfair Display', serif;
+}
+
+/* ===== CONTACT INFO ===== */
+p {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+/* ===== FORM CONTAINER ===== */
+form {
+  background: white;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ffe6f2;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #ff66b2;
+  box-shadow: 0 0 6px rgba(255, 102, 178, 0.4);
+}
+
+form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+/* ===== BUTTON ===== */
+form button {
+  background-color: #ff66b2;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ff4da6;
+  transform: translateY(-2px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 25px 10%;
+  margin-top: auto;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.social-links {
+  margin-bottom: 12px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #ff66b2;
+  margin: 0 10px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  header, head {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  form {
+    padding: 20px;
+    margin: 25px;
+  }
+
+  form input, form textarea {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,195 @@
+/* ===== IMPORT FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  background-color: #fdf6fa;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(135deg, #ff66b2, #ff99cc);
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+header .logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  color: #ffe6f2;
+}
+
+/* ===== PAGE TITLE ===== */
+h2 {
+  text-align: center;
+  margin: 40px auto 20px;
+  color: #ff4da6;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+}
+
+/* ===== ABOUT SECTION CARD ===== */
+.about-card {
+  background: white;
+  max-width: 950px;
+  margin: 20px auto 50px;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== IMAGE FRAME ===== */
+.about-card img {
+  display: block;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto 20px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 4px solid #ff99cc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== PARAGRAPH ===== */
+.about-card p {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #444;
+  margin: 20px auto;
+  max-width: 750px;
+}
+
+/* ===== SERVICES SECTION ===== */
+h3 {
+  text-align: center;
+  margin-top: 30px;
+  color: #ff66b2;
+  font-family: 'Playfair Display', serif;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 850px;
+  padding: 0;
+  list-style: none;
+}
+
+.services-list li {
+  background: white;
+  padding: 18px 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.services-list li:hover {
+  background-color: #ff66b2;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 25px 10%;
+  margin-top: auto;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.social-links {
+  margin-bottom: 12px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #ff66b2;
+  margin: 0 10px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header nav a {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .about-card {
+    padding: 25px;
+  }
+
+  .about-card img {
+    width: 90%;
+  }
+}
